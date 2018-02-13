@@ -1,0 +1,104 @@
+<!-- product.template.html -->
+<div class="host horizontal">
+    <my-title>Product</my-title>
+    <div class="content horizontal">
+        <div class="vertical">
+            <div class="horizontal">
+                <div class="product-title">Familiar Chat</div>
+                <my-paragraph>
+                    ホームページ上での運営者と来訪者とのリアルタイムチャットサポートシステム
+                    <ul>
+                        <li>定型文</li>
+                        <li>自動応答</li>
+                        <li>訪問者情報</li>
+                        <li>営業時間</li>
+                        <li>履歴管理</li>
+                    </ul>
+                </my-paragraph>
+            </div>
+            <div class="image familiar-chat-image"></div>
+        </div>
+
+        <div class="vertical">
+            <div class="image is09-ecsite-image"></div>
+            <div class="horizontal">
+                <div class="product-title">IS09 ECSite</div>
+                <my-paragraph>
+                    ホームページ上での運営者と来訪者とのリアルタイムチャットサポートシステム
+                    <ul>
+                        <li>定型文</li>
+                        <li>自動応答</li>
+                        <li>訪問者情報</li>
+                        <li>営業時間</li>
+                        <li>履歴管理</li>
+                    </ul>
+                </my-paragraph>
+            </div>
+        </div>
+    </div>
+    <style>
+        .vertical,
+        .horizontal {
+            align-items       : center;
+            display           : flex;
+            justify-content   : center;
+        }
+
+        .horizontal {
+            flex-direction    : column;
+        }
+
+        .host {
+            background-color  : rgba(0,0,0,.05);
+            clip-path         : polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+            min-height        : 100vh;
+            padding           : 3rem;
+            -webkit-clip-path : polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+
+        .image {
+            background-image   : url(/static/image/product/familiar-chat.png);
+            background-position: center top;
+            background-repeat  : no-repeat;
+            background-size    : cover;
+            height             : 30rem;
+            width              : 36rem;
+            -moz-background-size:cover;
+        }
+
+        .familiar-chat-image {
+            background-image: url(/static/image/product/familiar-chat.png);
+        }
+
+        .is09-ecsite-image {
+            background-image: url(/static/image/product/is09-ecsite.png);
+        }
+
+        .content > div:nth-child(2n - 1) {
+            flex-wrap      : wrap-reverse;
+        }
+
+        .content > div:nth-child(2n) {
+            flex-wrap      : wrap;
+        }
+
+        my-title {
+            margin-top: 3rem;
+        }
+
+        my-paragraph {
+            max-width: 30rem;
+        }
+
+        .product-title {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 767px) {
+            .image {
+                height: 22rem;
+                width : 25rem;
+            }
+        }
+    </style>
+</div>

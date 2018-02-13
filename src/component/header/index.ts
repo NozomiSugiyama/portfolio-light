@@ -36,6 +36,10 @@ export class MyHeader extends GestureEventListeners(PolymerElement) {
         checkHeaderPosition();
     }
 
+    onHomeClick() {
+        (this as any).dispatchEvent(new CustomEvent('home-clicked'));
+    }
+
     onSkillClick() {
         (this as any).dispatchEvent(new CustomEvent('skill-clicked'));
     }

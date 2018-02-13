@@ -1,6 +1,7 @@
 <!-- app.template.html -->
-<div name="host" class="host">
+<div name="host" class="host" id="host">
     <my-header
+        on-home-clicked="toTop"
         on-skill-clicked="toSkillSection"
         on-product-clicked="toProductSection"
         on-contact-clicked="toContactSection"
@@ -10,7 +11,9 @@
         on-product-clicked="toProductSection"
         on-contact-clicked="toContactSection"
     ></my-self>
-    <my-skill id="skill"></my-skill>
+    <my-skill   id="skill"></my-skill>
+    <my-product id="product"></my-product>
+    <my-contact id="contact"></my-contact>
     <style>
     </style>
 </div>

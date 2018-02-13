@@ -1,0 +1,93 @@
+<!-- contact.template.html -->
+<div class="host horizontal">
+    <my-title>Contact</my-title>
+    <div class="content">
+        <div>
+            <div class="icon-email"></div>
+            <div>rioc.sugiyama@gmail.com</div>
+        </div>
+        <div>
+            <div class="icon-github"></div>
+            <a
+                href="https://github.com/NozomiSugiyama"
+                target="_blank"
+            >
+                NozomiSugiyama
+            </a>
+        </div>
+        <div>
+            <div class="icon-twitter"></div>
+            <a
+                href="https://twitter.com/rioc_module"
+                target="_blank"
+            >
+                @rioc_module
+            </a>
+        </div>
+    </div>
+
+    <style>
+
+        [class^="icon-"], [class*=" icon-"] {
+            background-position:center top;
+            background-repeat  :no-repeat;
+            background-size    :cover;
+            height             : 2rem;
+            width              : 2rem;
+            -moz-background-size:cover;
+        }
+
+        .icon-twitter {
+            background-image   :url(/static/image/contact/twitter.png);
+        }
+
+        .icon-email {
+            background-image   :url(/static/image/contact/email.png);
+        }
+
+        .icon-github {
+            background-image   :url(/static/image/contact/github.png);
+        }
+
+        .horizontal {
+            align-items       : center;
+            flex-direction    : column;
+            display           : flex;
+            justify-content   : center;
+        }
+
+        .host {
+            background-color: rgba(76, 76, 76, 1);
+            color           : white;
+            padding         : 0 2rem 2rem 2rem;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .content > div {
+            align-self     : center;
+            display        : flex;
+            justify-content: center;
+            margin         : 1rem;
+        }
+
+        .content > div > :nth-child(2) {
+            align-items    : center;
+            display        : inline-flex;
+            color          : white;
+            font-size      : 1.2rem;
+            justify-content: center;
+            margin         : 0 1rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</div>

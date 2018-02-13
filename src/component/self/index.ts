@@ -15,20 +15,6 @@ export class MySelf extends GestureEventListeners(PolymerElement) {
         super.ready();
     }
 
-    transitionSectionTo(event) {
-        const section = event.target.dataset.section;
-
-        const element  = window.document.querySelector(`#${section}`);
-        
-        console.log('transitionSectionTo');
-        if (element)
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block   : 'start',
-                inline  : 'start',
-            });
-    }
-
     onSkillClick() {
         (this as any).dispatchEvent(new CustomEvent('skill-clicked'));
     }

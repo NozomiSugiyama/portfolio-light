@@ -3,7 +3,6 @@ import * as view from './app.template.html';
 
 export class MyApp extends PolymerElement {
 
-    [x: string]: any;
     // Define a string template instead of a `<template>` element.
     static get template() {
         return view;
@@ -15,23 +14,29 @@ export class MyApp extends PolymerElement {
 
     ready() {
         super.ready();
-        console.log(this.$);
     }
 
-    toSkillSection() {
-        console.log(this.$.skill);
-        this.$.skill.scrollIntoView({
+    scroll (element) {
+        element.scrollIntoView({
             behavior: 'smooth',
             block   : 'start',
             inline  : 'start',
         });
     }
 
+    toTop() {
+        this.scroll((this as any).$.host);
+    }
+
+    toSkillSection() {
+        this.scroll((this as any).$.skill);
+    }
+
     toProductSection() {
-        (this as any).dispatchEvent(new CustomEvent('product-clicked'));
+        this.scroll((this as any).$.product);
     }
 
     toContactSection() {
-        (this as any).dispatchEvent(new CustomEvent('contact-clicked'));
+        this.scroll((this as any).$.contact);
     }
 }

@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sugiyama</title>
-    <script src="webcomponents-loader.js"></script>
-    <script src="particles.min.js"></script>
+    <title>sgnz-portfolio</title>
     <style>
         * {
             margin: 0;
         }
 
         .particles {
+            box-shadow: inset 0px -1px 3px 0px rgba(0,0,0,.2);
             display   : block;
-            box-shadow: inset 0px -3px 3px 0px rgba(0,0,0,.2);
             left      : 0;
+            height    : 100vh !important;
             position  : absolute;
             top       : 0;
+            width     : 100vw !important;
             z-index   : -1;
         }
 
@@ -26,23 +26,22 @@
             background-color: whitesmoke;
             height          : 100vh;
             overflow        : hidden;
+            opacity         : 1;
             width           : 100vw;
             z-index         : 10;
         }
 
         body:not(.loadend) {
+            opacity : 0;
             overflow: hidden;
         }
 
-        @media (max-width: 1020px) {
-            html{font-size: 87%;}
-            body{font-size: 1.4rem;}
-        }
-
         @media (max-width: 767px) {
-            html{font-size: 67%;}
-            body{font-size: 1.4rem;}
+            html {
+                font-size: 10px;
+            }
         }
+        
     </style>
 </head>
 
@@ -50,36 +49,39 @@
     <div class="loading"></div>
     <my-app id="my-app"></my-app>
     <canvas class="particles"></canvas>
+    <script src="webcomponents-loader.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="https://familiar-chat.firebaseapp.com/visitor/widget/main.js?account_id=0"></script>
+    <script>
+        window.addEventListener(
+            'load',
+            function() {
+                document.body.classList.add('loadend');
+                Particles.init({
+                    selector: '.particles',
+                    speed   : 0.25,
+                    maxParticles: 220,
+                    color: '#48F2E3',
+                    connectParticles: true,
+                    // options for breakpoints
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            options: {
+                                maxParticles: 100,
+                                color: '#48F2E3',
+                            }
+                        }, {
+                            breakpoint: 425,
+                            options: {
+                                maxParticles: 50,
+                            }
+                        }
+                    ]
+                });
+            },
+            false
+        )
+    </script>
 </body>
-<script>
-    window.addEventListener(
-        'load',
-        function() {
-            document.body.classList.add('loadend');
-            Particles.init({
-                selector: '.particles',
-                speed   : 0.25,
-                maxParticles: 220,
-                color: '#48F2E3',
-                connectParticles: true,
-                // options for breakpoints
-                responsive: [
-                    {
-                        breakpoint: 767,
-                        options: {
-                            maxParticles: 100,
-                            color: '#48F2E3',
-                        }
-                    }, {
-                        breakpoint: 425,
-                        options: {
-                            maxParticles: 50,
-                        }
-                    }
-                ]
-            });
-        } , 
-        false
-    )
-</script>
 </html>

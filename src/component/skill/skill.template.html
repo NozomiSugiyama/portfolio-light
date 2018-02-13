@@ -1,12 +1,28 @@
 <!-- skill.template.html -->
 <div class="host">
     <my-title>Skill</my-title>
+    <div class="item-wrapper">
+        <template is="dom-repeat" items="[[items]]">
+            <my-skill-item 
+                name="{{item.name}}"
+                url="{{item.url}}"
+            ></my-skill-item>
+        </div>
+    </div>
     <style>
         .host {
             align-items    : center;
             display        : flex;
+            flex-direction : column;
             justify-content: center;
+        }
+
+        .item-wrapper {
+            align-items    : center;
+            display        : flex;
+            flex-wrap      : wrap;
+            justify-content: center;
+            width          : 100vw;
         }
     </style>
 </div>
-    

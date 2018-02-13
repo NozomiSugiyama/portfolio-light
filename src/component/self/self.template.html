@@ -12,15 +12,9 @@
             </div>
         </div>
     </div>
-    <my-paragraph>
-        　2015年、日本工学院八王子専門学校 ITスペシャリスト科 ネットワーク専攻に入学。
-        情報技術研究部に入部し、SPAJAM/ICTSC/MBSD/SECCONなどのコンテストに参加。
-        授業では主にcisco機器を扱いコンテストではlinuxサーバ、プログラミングを行う。
-        2016年10月 応用情報技術者試験合格。趣味はフロントエンド開発(おまけ　w)
-    </my-paragraph>
     <div class="page-transition">
-        <div>
-            <div on-click="onSkillClick"></div>
+        <div on-click="onSkillClick">
+            <div></div>
         </div>
     </div>
     <style>
@@ -44,20 +38,11 @@
         .host > :first-child {
             align-items    : center;
             display        : flex;
+            flex-grow      : 5;
             font-family    : 'Playfair Display', serif;
             justify-content: center;
         }
 
-        my-paragraph {
-            animation-name     : FadeIn;
-            animation-delay    : 4s;
-            animation-duration : .5s;
-            animation-fill-mode: forwards;
-            bottom             : -2rem;
-            opacity            : 0;
-            position           : relative;
-        }
-        
         my-avatar {}
 
         .text-content {
@@ -125,6 +110,7 @@
             border-radius   : 50%;
             cursor          : pointer;
             height          : 5rem;
+            margin          : 2rem;
             width           : 5rem;
         }
 
