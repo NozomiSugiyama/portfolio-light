@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sugiyama</title>
+    <script src="webcomponents-loader.js"></script>
+    <script src="particles.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .particles {
+            display   : block;
+            box-shadow: inset 0px -3px 3px 0px rgba(0,0,0,.2);
+            left      : 0;
+            position  : absolute;
+            top       : 0;
+            z-index   : -1;
+        }
+
+        :not(.loadend) > .loading {
+            background-color: whitesmoke;
+            height          : 100vh;
+            overflow        : hidden;
+            width           : 100vw;
+            z-index         : 10;
+        }
+
+        body:not(.loadend) {
+            overflow: hidden;
+        }
+
+        @media (max-width: 1020px) {
+            html{font-size: 87%;}
+            body{font-size: 1.4rem;}
+        }
+
+        @media (max-width: 767px) {
+            html{font-size: 67%;}
+            body{font-size: 1.4rem;}
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="loading"></div>
+    <my-app id="my-app"></my-app>
+    <canvas class="particles"></canvas>
+</body>
+<script>
+    window.addEventListener(
+        'load',
+        function() {
+            document.body.classList.add('loadend');
+            Particles.init({
+                selector: '.particles',
+                speed   : 0.25,
+                maxParticles: 220,
+                color: '#48F2E3',
+                connectParticles: true,
+                // options for breakpoints
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        options: {
+                            maxParticles: 100,
+                            color: '#48F2E3',
+                        }
+                    }, {
+                        breakpoint: 425,
+                        options: {
+                            maxParticles: 50,
+                        }
+                    }
+                ]
+            });
+        } , 
+        false
+    )
+</script>
+</html>
