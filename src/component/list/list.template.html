@@ -1,0 +1,22 @@
+<!-- list.template.html -->
+<ul class$="host {{ orientation }} {{listType}}">
+    <slot></slot>
+    <style>
+        .host {
+            margin : 1rem 0;
+            padding: var(--my-list-padding, 0 2rem);
+        }
+
+        .host.vertical {
+            flex-direction: row;
+        }
+        
+        .host.horizontal {
+            flex-direction: column;
+        }
+        
+        .host.disc ::slotted(*) {
+            list-style-type: disc;
+        }
+    </style>
+</ul>

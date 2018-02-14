@@ -1,88 +1,49 @@
-<!-- contest.template.html -->
+<!-- activities.template.html -->
 <div class="host">
-    <my-title>Contest</my-title>
+    <my-title>Activities</my-title>
+    <div>
+        <div>
+            <div>contest</div>
+            <ul class="list">
+                <template is="dom-repeat" items="[[items.contest]]">
+                    <li class="item">
+                        {{ item.name }}
+                    </li>
+                </template>
+            </ul>
+        </div>
+        <div>
+            <div>capacity</div>
+            <ul class="list">
+                <template is="dom-repeat" items="[[items.capacity]]">
+                    <li class="item">
+                        {{ item }}
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
     <div class="item-wrapper">
-        <my-inview>
-            <a
-                href="http://icttoracon.net/"
-                rel="noopener"
-                target="_blank"
-            >
-                <img src="/static/image/contest/ICTSC5.jpg">
-                <div class="description">
-                    <div>2016</div>
-                    <div>cloudpack杯 ICTSC5</div>
-                </div>
-            </a>
-        </my-inview>
-        <my-inview>
-            <a
-                href="http://icttoracon.net/"
-                rel="noopener"
-                target="_blank"
-            >
-                <img src="/static/image/contest/ICTSC6.jpg">
-                <div class="description">
-                    <div>2016</div>
-                    <div>NTT西日本杯 ICTSC6 優秀賞</div>
-                </div>
-            </a>
-        </my-inview>
-        <my-inview>
-            <a
-                href="http://setten.sgec.or.jp/cooperation/051.html"
-                rel="noopener"
-                target="_blank"
-            >
-                <img src="/static/image/contest/MBSD-2017.jpg">
-                <div class="description">
-                    <div>2017</div>
-                    <div>MBSD 2017 第５位</div>
-                </div>
-            </a>
-        </my-inview>
-        <my-inview>
-            <a
-                href="http://spajam.jp/2016/"
-                rel="noopener"
-                target="_blank"
-            >
-                <img src="/static/image/contest/SPAJAM-2016.jpg">
-                <div class="description">
-                    <div>2016</div>
-                    <div>SPAJAM 2016</div>
-                </div>
-            </a>
-        </my-inview>
-        <my-inview>
-            <a
-                href="http://spajam.jp/2017/"
-                rel="noopener"
-                target="_blank"
-            >
-                <img src="/static/image/contest/SPAJAM-2017.jpg">
-                <div class="description">
-                    <div>2017</div>
-                    <div>SPAJAM 2017</div>
-                </div>
-            </a>
-        </my-inview>
-        <my-inview>
-            <a
-                href="http://ranking.quals.seccon.jp/"
-                rel="noopener"
-                target="_blank"
-            >
-                <img src="/static/image/contest/SECCON-2016.jpg">
-                <div class="description">
-                    <div>2016</div>
-                    <div>SECCON 2017 Online CTF</div>
-                </div>
-            </a>
-        </my-inview>
+        <template is="dom-repeat" items="[[items.image]]">
+            <my-inview>
+                <a
+                    href="{{ item.link }}"
+                    rel="noopener"
+                    target="_blank"
+                >
+                    <img src="{{ item.image }}">
+                    <div class="description">
+                        <div>{{item.year}}</div>
+                        <div>{{item.name}}</div>
+                    </div>
+                </a>
+            </my-inview>
+        </template>
     </div>
 
     <style>
+        @import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css"');
+        
         .host {
             align-items    : center;
             box-sizing     : border-box;
@@ -92,6 +53,27 @@
             margin-bottom  : 3rem;
             padding        : 1rem 0;
             width          : 100vw;
+        }
+
+        .host > :nth-child(2) {
+            display: flex;
+        }
+
+        .host > :nth-child(2) > div > :first-child {
+            font-size : 1.4rem;
+            text-align: center;
+        }
+
+        .list {
+            padding: 0 2rem;
+        }
+
+        .item {
+            display        : block;
+            font-family    : 'Rounded Mplus 1c', serif;
+            letter-spacing : .06rem;
+            list-style-type: none;
+            margin         : .2rem;
         }
 
         .item-wrapper {

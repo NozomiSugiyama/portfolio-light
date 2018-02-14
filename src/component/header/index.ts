@@ -40,20 +40,16 @@ export class MyHeader extends GestureEventListeners(PolymerElement) {
         (this as any).dispatchEvent(new CustomEvent('home-clicked'));
     }
 
-    onCareerClick() {
-        (this as any).dispatchEvent(new CustomEvent('career-clicked'));
+    onActivitiesClick() {
+        (this as any).dispatchEvent(new CustomEvent('activities-clicked'));
     }
 
-    onContestClick() {
-        (this as any).dispatchEvent(new CustomEvent('contest-clicked'));
+    onProductsClick() {
+        (this as any).dispatchEvent(new CustomEvent('products-clicked'));
     }
 
-    onProductClick() {
-        (this as any).dispatchEvent(new CustomEvent('product-clicked'));
-    }
-
-    onSkillClick() {
-        (this as any).dispatchEvent(new CustomEvent('skill-clicked'));
+    onSkillsClick() {
+        (this as any).dispatchEvent(new CustomEvent('skills-clicked'));
     }
 
     onContactClick() {

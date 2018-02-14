@@ -1,0 +1,37 @@
+<!-- skills.template.html -->
+<div class="host">
+    <my-title>Skills</my-title>
+    <div class="item-wrapper">
+        <template is="dom-repeat" items="[[items]]">
+            <my-technology
+                name="{{item.name}}"
+                url="{{item.url}}"
+            ></my-technology>
+        </template>
+    </div>
+    <style>
+        .host {
+            align-items    : center;
+            box-sizing     : border-box;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            min-height     : 100vh;
+            padding        : 1rem;
+            width          : 100%;
+        }
+
+        .item-wrapper {
+            align-items    : center;
+            display        : flex;
+            flex-wrap      : wrap;
+            justify-content: center;
+            width          : 100vw;
+        }
+
+        my-technology {
+            --my-technology-width : 10rem;
+            --my-technology-height: 10rem;
+        }
+    </style>
+</div>

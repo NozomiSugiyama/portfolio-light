@@ -1,9 +1,7 @@
 import { Element as PolymerElement } from '@polymer/polymer/polymer-element';
-import '@polymer/polymer/lib/elements/dom-repeat';
-import * as view from './career.template.html';
+import * as view from './list-item.template.html';
 
-export class MyCareer extends PolymerElement {
-
+export class MyListItem extends PolymerElement {
     static get template() {
         return view;
     }
@@ -12,8 +10,8 @@ export class MyCareer extends PolymerElement {
         super();
     }
 
-    ready() {
-        super.ready();
+    static get properties() {
+        return {
+        };
     }
-
 }

@@ -6,9 +6,9 @@
         </div>
     </div>
     <nav>
-        <div on-click="onContestClick">Contest</div>
-        <div on-click="onProductClick">Product</div>
-        <div on-click="onSkillClick">Skill</div>
+        <div on-click="onActivitiesClick">Activities</div>
+        <div on-click="onProductsClick">Products</div>
+        <div on-click="onSkillsClick">Skills</div>
         <div on-click="onContactClick">Contact</div>
     </nav>
 
@@ -35,6 +35,11 @@
         .host > :first-child {
             flex-grow: 1;
             font-size: 1.6rem;
+        }
+
+        .host > :first-child > * {
+            cursor: pointer;
+            width : fit-content;
         }
 
         nav {

@@ -2,23 +2,19 @@
 <div name="host" class="host" id="host">
     <my-header
         on-home-clicked="toTop"
-        on-career-clicked="toCareerSection"
-        on-contest-clicked="toContetoContestSectionstSection"
-        on-skill-clicked="toSkillSection"
-        on-product-clicked="toProductSection"
+        on-activities-clicked="toActivitiesSection"
+        on-skills-clicked="toSkillsSection"
+        on-products-clicked="toProductsSection"
         on-contact-clicked="toContactSection"
     ></my-header>
     <my-self
-        on-career-clicked="toCareerSection"
-        on-contest-clicked="toContestSection"
-        on-product-clicked="toProductSection"
-        on-skill-clicked="toSkillSection"
-        on-contact-clicked="toContactSection"
+        on-activities-clicked="toActivitiesSection"
     ></my-self>
-    <my-contest id="contest"></my-contest>
-    <my-product id="product"></my-product>
-    <my-skill   id="skill"></my-skill>
+    <my-activities id="activities"></my-activities>
+    <my-products id="products"></my-products>
+    <my-skills   id="skills"></my-skills>
     <my-contact id="contact"></my-contact>
+    <my-footer></my-footer>
     <style>
         @import url('https://fonts.googleapis.com/css?family=PT+Serif');
         @import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css"');

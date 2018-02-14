@@ -1,7 +1,7 @@
 import { Element as PolymerElement } from '@polymer/polymer/polymer-element';
-import * as view from './skill-item.template.html';
+import * as view from './list.template.html';
 
-export class MySkillItem extends PolymerElement {
+export class MyList extends PolymerElement {
     static get template() {
         return view;
     }
@@ -10,16 +10,16 @@ export class MySkillItem extends PolymerElement {
         super();
     }
 
-    ready() {
-        super.ready();
-    }
-
     static get properties() {
         return {
-            url: {
+            orientation: {
                 type: String,
+                value: 'vertical'
+            },
+            listType: {
+                type: String,
+                value: ''
             }
         };
     }
-
 }

@@ -28,20 +28,16 @@ export class MyApp extends PolymerElement {
         this.scroll((this as any).$.host);
     }
     
-    toCareerSection() {
-        this.scroll((this as any).$.career);
+    toActivitiesSection() {
+        this.scroll((this as any).$.activities);
     }
 
-    toContestSection() {
-        this.scroll((this as any).$.contest);
+    toSkillsSection() {
+        this.scroll((this as any).$.skills);
     }
 
-    toSkillSection() {
-        this.scroll((this as any).$.skill);
-    }
-
-    toProductSection() {
-        this.scroll((this as any).$.product);
+    toProductsSection() {
+        this.scroll((this as any).$.products);
     }
 
     toContactSection() {

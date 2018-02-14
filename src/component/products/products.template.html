@@ -1,0 +1,233 @@
+<!-- product.template.html -->
+<div class="host horizontal">
+    <my-title>Products</my-title>
+    <div class="content horizontal">
+
+    <div class="vertical">
+        <div class="horizontal description">
+            <div class="product-title">Familiar Chat</div>
+            <div class="horizontal">
+                <my-paragraph>
+                    ホームページ上での運営者と来訪者とのリアルタイムチャットサポートシステム
+                </my-paragraph>
+                <div class="horizontal detail">
+                    <div class="horizontal features">
+                        <div>Features</div>
+                        <div class="vertical">
+                            <div class="horizontal feature-item">
+                                <div>For operator</div>
+                                <my-list>
+                                    <li>チャット機能</li>
+                                    <li>画像送信機能</li>
+                                    <li>定型文</li>
+                                    <li>自動応答</li>
+                                    <li>訪問者情報</li>
+                                    <li>営業時間</li>
+                                    <li>履歴管理</li>
+                                </my-list>
+                            </div>
+                            <div class="horizontal feature-item">
+                                <div>For visitor</div>
+                                <my-list>
+                                    <li>チャット機能</li>
+                                    <li>画像送信機能</li>
+                                </my-list>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <my-technology
+                            name="React"
+                            url="/static/image/technology/react.png"
+                        ></my-technology>
+                        <my-technology
+                            name="Firebase"
+                            url="/static/image/technology/firebase.png"
+                        ></my-technology>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <my-inview>
+            <div class="image familiar-chat-image"></div>
+        </my-inview>
+    </div>
+    <div class="vertical">
+        <my-inview>
+            <div class="image is09-ecsite-image"></div>
+        </my-inview>
+        <div class="horizontal description">
+            <div class="product-title">IS09 ECSite</div>
+            <div class="horizontal">
+                <my-paragraph>
+                    カレッジ内の生徒が利用する仮想ECサイト。
+                    フロントエンドは SPA 、バックエンドは RESTful API として実装。
+                </my-paragraph>
+                <div class="horizontal detail">
+                    <div class="horizontal features">
+                        <div>Features</div>
+                        <div class="vertical">
+                            <div class="horizontal feature-item">
+                                <div>User account</div>
+                                <my-list list-type="disc">
+                                    <li>ログイン認証</li>
+                                    <li>購入履歴</li>
+                                </my-list>
+                            </div>
+                            <div class="horizontal feature-item">
+                                <div>Product</div>
+                                <my-list>
+                                    <li>閲覧</li>
+                                    <li>カート追加</li>
+                                    <li>購入</li>
+                                </my-list>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <my-technology
+                            name="Angular5"
+                            url="/static/image/technology/angular.png"
+                        ></my-technology>
+                        <my-technology
+                            name="Python"
+                            url="/static/image/technology/python.png"
+                        ></my-technology>
+                        <my-technology
+                            name="MySql"
+                            url="/static/image/technology/mysql.png"
+                        ></my-technology>
+                        <my-technology
+                            name="Redis"
+                            url="/static/image/technology/redis.png"
+                        ></my-technology>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+        @import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css"');
+
+        .vertical,
+        .horizontal {
+            align-items       : center;
+            display           : flex;
+            justify-content   : center;
+        }
+
+        .horizontal {
+            flex-direction: column;
+        }
+
+        .host {
+            box-sizing        : border-box;
+            background-color  : rgba(0,0,0,.05);
+            -webkit-clip-path : polygon(50% 6%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
+            clip-path         : polygon(50% 6%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
+            font-family       : 'Rounded Mplus 1c', 'PT Serif', serif;
+            min-height        : 100vh;
+            padding           : 1rem 1rem 5rem 1rem;
+            width             : 100%;
+        }
+
+        .image {
+            background-image   : url(/static/image/product/familiar-chat.png);
+            background-position: center top;
+            background-repeat  : no-repeat;
+            background-size    : cover;
+            height             : 21rem;
+            width              : 29rem;
+            -moz-background-size:cover;
+        }
+
+        .familiar-chat-image {
+            background-image: url(/static/image/product/familiar-chat.png);
+        }
+
+        .is09-ecsite-image {
+            background-image: url(/static/image/product/is09-ecsite.png);
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .content > div {
+            justify-content: space-around;
+            width          : 100%;
+        }
+
+        .content > div:nth-child(2n - 1) {
+            flex-wrap      : wrap-reverse;
+        }
+
+        .content > div:nth-child(2n) {
+            flex-wrap      : wrap-reverse;
+        }
+
+        .content > div:not(:first-child) {
+            margin-top: 2rem;
+        }
+
+        .description {
+            margin: 2rem 0;
+        }
+
+        .detail {
+            width: 100%;
+        }
+
+        .features {
+            margin         : .2rem;
+            width          : 100%;
+        }
+
+        .features > :first-child {
+            margin-bottom: .6rem;
+            margin-top   : 1rem;
+            font-size    : 1.2rem;
+        }
+
+        .features > :nth-child(2) {
+            align-items    : flex-start;
+            justify-content: space-around;
+            width          : 100%;
+        }
+
+        .feature-item {
+            align-items: flex-start;
+        }
+
+        .feature-item > :first-child {
+            padding    : 0 .8rem;
+        }
+
+        my-title {
+            margin-top: 3rem;
+        }
+
+        my-paragraph {
+            max-width: 30rem;
+        }
+
+        .product-title {
+            font-size: 2rem;
+            margin   : 1rem 0;
+        }
+
+        my-technology {
+            --my-technology-width : 4rem;
+            --my-technology-height: 4rem;
+        }
+
+        @media (max-width: 767px) {
+            .host {
+                -webkit-clip-path : polygon(50% 4%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+                clip-path         : polygon(50% 4%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+            }
+        }
+    </style>
+</div>

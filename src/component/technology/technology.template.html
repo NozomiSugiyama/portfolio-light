@@ -1,4 +1,4 @@
-<!-- skill-item.template.html -->
+<!-- technology.template.html -->
 <my-inview>
     <div class="content">
         <div class="image-wrapper">
@@ -11,20 +11,23 @@
     <style>
         .content {
             align-items     : center;
+            background-color: white;
             border-radius   : 50%;
             box-shadow      : 1px 1px 2px 1px rgba(0,0,0,.2);
             display         : flex;
-            height          : 10rem;
             justify-content : center;
             margin          : 2rem;
             transition      : all .6s ease-out;
             transition-delay: .8s;
-            width           : 10rem;
+            width : var(--my-technology-width);
+            height: var(--my-technology-height);
         }
 
         .image-wrapper {
             transform: rotate(-45deg);
             border   : 1px solid rgba(72, 242, 227, .5);
+            height   : 60%;
+            width    : 60%;
         }
 
         .image {
@@ -32,11 +35,10 @@
             background-repeat  :no-repeat;
             background-size    :cover;
             border             : 1px solid rgba(72, 242, 227, .5);
-            height             : 6rem;
+            height             : 100%;
             transform          : rotate(45deg);
-            width              : 6rem;
+            width              : 100%;
             -moz-background-size:cover;
         }
     </style>
 </div>
-    
