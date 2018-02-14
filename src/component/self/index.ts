@@ -19,6 +19,10 @@ export class MySelf extends GestureEventListeners(PolymerElement) {
         (this as any).dispatchEvent(new CustomEvent('career-clicked'));
     }
 
+    onContestClick() {
+        (this as any).dispatchEvent(new CustomEvent('contest-clicked'));
+    }
+
     onSkillClick() {
         (this as any).dispatchEvent(new CustomEvent('skill-clicked'));
     }

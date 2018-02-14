@@ -2,11 +2,11 @@
 <div class$="host {{ headerClass }}">
     <div>
         <div on-click="onHomeClick">
-            sgnz-portfolio
+            SGNZ Portfolio
         </div>
     </div>
     <nav>
-        <div on-click="onCareerClick">Career</div>
+        <div on-click="onContestClick">Contest</div>
         <div on-click="onProductClick">Product</div>
         <div on-click="onSkillClick">Skill</div>
         <div on-click="onContactClick">Contact</div>
@@ -80,11 +80,25 @@
 
         @media (max-width: 767px) {
             .host {
-                padding: 0 1rem;
+                padding: 1rem;
+                top    : -5.2rem;
             }
             
             nav {
                 letter-spacing : initial;
+            }
+
+            nav > :nth-child(n + 4) {
+                display: none;
+            }
+
+            @keyframes SlideIn {
+                from {
+                    top : -5.2rem;
+                }
+                to {
+                    top : 0rem;
+                }
             }
         }
         

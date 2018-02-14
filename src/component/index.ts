@@ -2,9 +2,10 @@ import * as kebabCase from 'lodash/fp/kebabCase';
 import { MyApp }       from './app';
 import { MyAvatar }    from './avatar';
 import { MyButton }    from './button';
-import { MyCareer }    from './career';
 import { MyContact }   from './contact';
+import { MyContest }   from './contest';
 import { MyHeader }    from './header';
+import { MyInview }    from './inview';
 import { MyParagraph } from './paragraph';
 import { MyProduct }   from './product';
 import { MySelf }      from './self';
@@ -17,9 +18,10 @@ const elements = {
     MyApp,
     MyAvatar,
     MyButton,
-    MyCareer,
     MyContact,
+    MyContest,
     MyHeader,
+    MyInview,
     MyParagraph,
     MyProduct,
     MySelf,

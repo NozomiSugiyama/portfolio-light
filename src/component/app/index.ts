@@ -32,6 +32,10 @@ export class MyApp extends PolymerElement {
         this.scroll((this as any).$.career);
     }
 
+    toContestSection() {
+        this.scroll((this as any).$.contest);
+    }
+
     toSkillSection() {
         this.scroll((this as any).$.skill);
     }

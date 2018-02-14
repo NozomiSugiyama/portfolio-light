@@ -3,20 +3,28 @@
     <my-header
         on-home-clicked="toTop"
         on-career-clicked="toCareerSection"
+        on-contest-clicked="toContetoContestSectionstSection"
         on-skill-clicked="toSkillSection"
         on-product-clicked="toProductSection"
         on-contact-clicked="toContactSection"
     ></my-header>
     <my-self
         on-career-clicked="toCareerSection"
+        on-contest-clicked="toContestSection"
         on-product-clicked="toProductSection"
         on-skill-clicked="toSkillSection"
         on-contact-clicked="toContactSection"
     ></my-self>
-    <my-career  id="career"></my-career>
+    <my-contest id="contest"></my-contest>
     <my-product id="product"></my-product>
     <my-skill   id="skill"></my-skill>
     <my-contact id="contact"></my-contact>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+        @import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css"');
+
+        * {
+            font-family: 'Rounded Mplus 1c', 'PT Serif', serif;
+        }
     </style>
 </div>

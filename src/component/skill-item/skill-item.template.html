@@ -1,13 +1,15 @@
 <!-- skill-item.template.html -->
-<div class$="host {{ class }}">
-    <div class="image-wrapper">
-        <div
-            class="image"
-            style$="background-image: url( {{ url }} );"
-        ></div>
+<my-inview>
+    <div class="content">
+        <div class="image-wrapper">
+            <div
+                class="image"
+                style$="background-image: url( {{ url }} );"
+            ></div>
+        </div>
     </div>
     <style>
-        .host {
+        .content {
             align-items     : center;
             border-radius   : 50%;
             box-shadow      : 1px 1px 2px 1px rgba(0,0,0,.2);
@@ -15,20 +17,9 @@
             height          : 10rem;
             justify-content : center;
             margin          : 2rem;
-            position        : relative;
             transition      : all .6s ease-out;
             transition-delay: .8s;
             width           : 10rem;
-        }
-
-        .host:not(.view) {
-            opacity  : 0;
-            transform: translateY(1.5rem);
-        }
-
-        .host.view {
-            bottom : 0;
-            transform: translateY(0);
         }
 
         .image-wrapper {

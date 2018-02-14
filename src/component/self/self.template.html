@@ -6,7 +6,7 @@
             <div>Nihon Kogakuin College Hachioji Campus</div>
             <div class="name">Nozomi Sugiyama</div>
             <div class="links">
-                <my-button on-click="onCareerClick">Career</my-button>
+                <my-button on-click="onContestClick">Contest</my-button>
                 <my-button on-click="onProductClick">Product</my-button>
                 <my-button on-click="onSkillClick"  >Skill</my-button>
                 <!-- <my-button on-click="onContactClick">Contact</my-button> -->
@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="page-transition">
-        <div on-click="onCareerClick">
+        <div on-click="onContestClick">
             <div></div>
         </div>
     </div>
@@ -29,6 +29,7 @@
             animation-fill-mode      : forwards;
             display                  : flex;
             flex-direction           : column;
+            font-family              : 'Playfair Display', serif;
             height                   : calc(100vh - 8rem);
             padding                  : 8rem 8rem 0 8rem;
             min-height               : max-content;

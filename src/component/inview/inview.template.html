@@ -1,0 +1,22 @@
+<!-- inview.template.html -->
+<div class$="host {{ class }}">
+    <slot></slot>
+    <style>
+        .host {
+            position        : relative;
+            transition      : all .6s ease-out;
+            transition-delay: .8s;
+        }
+
+        .host:not(.view) {
+            opacity  : 0;
+            transform: translateY(1.5rem);
+        }
+
+        .host.view {
+            bottom : 0;
+            transform: translateY(0);
+        }
+    </style>
+</div>
+    
