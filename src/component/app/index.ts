@@ -27,6 +27,10 @@ export class MyApp extends PolymerElement {
     toTop() {
         this.scroll((this as any).$.host);
     }
+    
+    toCareerSection() {
+        this.scroll((this as any).$.career);
+    }
 
     toSkillSection() {
         this.scroll((this as any).$.skill);

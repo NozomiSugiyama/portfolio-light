@@ -6,8 +6,9 @@
         </div>
     </div>
     <nav>
-        <div on-click="onSkillClick">Skill</div>
+        <div on-click="onCareerClick">Career</div>
         <div on-click="onProductClick">Product</div>
+        <div on-click="onSkillClick">Skill</div>
         <div on-click="onContactClick">Contact</div>
     </nav>
 
@@ -21,9 +22,8 @@
             background-color   : rgba(0,0,0,.05);
             color              : #333;
             display            : flex;
-            height             : 4rem;
+            height             : 3.5rem;
             left               : 0;
-            min-height         : 4rem;
             padding            : 0 2rem;
             position           : fixed;
             right              : 0;
@@ -79,6 +79,10 @@
         }
 
         @media (max-width: 767px) {
+            .host {
+                padding: 0 1rem;
+            }
+            
             nav {
                 letter-spacing : initial;
             }

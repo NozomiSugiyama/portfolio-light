@@ -2,6 +2,7 @@ import * as kebabCase from 'lodash/fp/kebabCase';
 import { MyApp }       from './app';
 import { MyAvatar }    from './avatar';
 import { MyButton }    from './button';
+import { MyCareer }    from './career';
 import { MyContact }   from './contact';
 import { MyHeader }    from './header';
 import { MyParagraph } from './paragraph';
@@ -16,6 +17,7 @@ const elements = {
     MyApp,
     MyAvatar,
     MyButton,
+    MyCareer,
     MyContact,
     MyHeader,
     MyParagraph,

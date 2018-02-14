@@ -1,6 +1,6 @@
 {
   "name": "portfolio-light",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sugiyama's portfolio",
   "main": "index.js",
   "repository": "github.com/NozomiSugiyama/portfolio-light",
@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.prod.conf.js",
-    "deploy": "firebase deploy",
+    "deploy": "sh deploy.sh",
     "lint": "tslint 'src/**/*.ts'"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
-    "ts-loader": "^2.3.4",
+    "ts-loader": "^3.5.0",
     "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.6.0",
     "tsutils": "^2.21.1",

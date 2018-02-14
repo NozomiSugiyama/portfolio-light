@@ -24,7 +24,7 @@
             <div class="horizontal">
                 <div class="product-title">IS09 ECSite</div>
                 <my-paragraph>
-                    ホームページ上での運営者と来訪者とのリアルタイムチャットサポートシステム
+                    授業として
                     <ul>
                         <li>定型文</li>
                         <li>自動応答</li>
@@ -49,11 +49,13 @@
         }
 
         .host {
+            box-sizing        : border-box;
             background-color  : rgba(0,0,0,.05);
-            clip-path         : polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+            -webkit-clip-path : polygon(50% 6%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
+            clip-path         : polygon(50% 6%, 100% 0, 100% 94%, 50% 100%, 0 94%, 0 0);
             min-height        : 100vh;
-            padding           : 3rem;
-            -webkit-clip-path : polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+            padding           : 1rem 1rem 5rem 1rem;
+            width             : 100%;
         }
 
         .image {
@@ -61,8 +63,8 @@
             background-position: center top;
             background-repeat  : no-repeat;
             background-size    : cover;
-            height             : 30rem;
-            width              : 36rem;
+            height             : 21rem;
+            width              : 29rem;
             -moz-background-size:cover;
         }
 
@@ -74,12 +76,26 @@
             background-image: url(/static/image/product/is09-ecsite.png);
         }
 
+        .content {
+            width: 100%;
+        }
+
+        .content > div {
+            justify-content: space-around;
+            width          : 100%;
+        }
+
         .content > div:nth-child(2n - 1) {
             flex-wrap      : wrap-reverse;
         }
 
         .content > div:nth-child(2n) {
             flex-wrap      : wrap;
+        }
+
+
+        .content > div:not(:first-child) {
+            margin-top: 2rem;
         }
 
         my-title {
@@ -95,9 +111,10 @@
         }
 
         @media (max-width: 767px) {
-            .image {
-                height: 22rem;
-                width : 25rem;
+
+            .host {
+                -webkit-clip-path : polygon(50% 4%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+                clip-path         : polygon(50% 4%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
             }
         }
     </style>
