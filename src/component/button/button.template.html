@@ -3,6 +3,9 @@
     <slot></slot>
     <style>
         .host {
+            -moz-user-select   : none;
+            -webkit-user-select: none;
+            -ms-user-select    : none;
             align-items     : center;
             background-color: rgba(0, 0, 0, .02);
             border          : 1px solid #aaa;
@@ -14,9 +17,6 @@
             min-width       : 4rem;
             padding         : 0.3rem 1rem;
             transition      : all .3s ease;
-            -moz-user-select   : none;
-            -webkit-user-select: none;
-            -ms-user-select    : none;
         }
 
         .host:hover {

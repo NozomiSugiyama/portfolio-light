@@ -223,6 +223,13 @@
             --my-technology-height: 4rem;
         }
 
+        @media (max-width: 1020px) and (min-width: 768px) {
+            .host{
+                -webkit-clip-path: polygon(50% 2%, 100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
+                clip-path        : polygon(50% 2%, 100% 0, 100% 98%, 50% 100%, 0 98%, 0 0);
+            }
+        }
+
         @media (max-width: 767px) {
             .host {
                 -webkit-clip-path : polygon(50% 4%, 100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
