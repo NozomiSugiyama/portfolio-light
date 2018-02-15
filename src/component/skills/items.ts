@@ -1,47 +1,58 @@
 const items = [
     {
         name: 'angular5',
-        url : '/static/image/technology/angular.png'
+        image : '/static/image/technology/angular.png',
+        url : ''
     },
     {
         name: 'git',
-        url : '/static/image/technology/git.png'
+        image : '/static/image/technology/git.png',
+        url : ''
     },
     {
         name: 'docker',
-        url : '/static/image/technology/docker.png'
+        image : '/static/image/technology/docker.png',
+        url : ''
     },
     {
         name: 'firebase',
-        url : '/static/image/technology/firebase.png'
+        image : '/static/image/technology/firebase.png',
+        url : ''
     },
     {
         name: 'gcp',
-        url : '/static/image/technology/gcp.png'
+        image : '/static/image/technology/gcp.png',
+        url : ''
     },
     {
         name: 'linux',
-        url : '/static/image/technology/linux.png'
+        image : '/static/image/technology/linux.png',
+        url : ''
     },
     {
         name: 'mysql',
-        url : '/static/image/technology/mysql.png'
+        image : '/static/image/technology/mysql.png',
+        url : ''
     },
     {
         name: 'nginx',
-        url : '/static/image/technology/nginx.png'
+        image : '/static/image/technology/nginx.png',
+        url : ''
     },
     {
         name: 'nodejs',
-        url : '/static/image/technology/nodejs.png'
+        image : '/static/image/technology/nodejs.png',
+        url : ''
     },
     {
         name: 'polymer',
-        url : '/static/image/technology/polymer.png'
+        image : '/static/image/technology/polymer.png',
+        url : ''
     },
     {
         name: 'react',
-        url : '/static/image/technology/react.png'
+        image : '/static/image/technology/react.png',
+        url : ''
     }
 ];
 

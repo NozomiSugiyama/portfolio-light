@@ -63,6 +63,9 @@ module.exports = {
       },
       {
         from: path.resolve(__dirname, '../node_modules/particlesjs/dist/particles.min.js')
+      },
+      {
+        from: path.resolve(__dirname, '../node_modules/@webcomponents/webcomponentsjs/webcomponents-lite.js')
       }
     ]),
     new webpack.IgnorePlugin(/vertx/),
