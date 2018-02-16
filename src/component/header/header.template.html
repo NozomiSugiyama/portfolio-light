@@ -38,10 +38,11 @@
         }
 
         .host > :first-child > * {
-            cursor    : pointer;
-            width     : -moz-fit-content;
-            width     : -webkit-fit-content;
-            width     : fit-content;
+            cursor     : pointer;
+            user-select: none;
+            width      : -moz-fit-content;
+            width      : -webkit-fit-content;
+            width      : fit-content;
         }
 
         nav {
@@ -58,6 +59,7 @@
             display      : inline-flex;
             margin       : 0 1rem;
             text-align   : center;
+            user-select  : none;
             transition   : all .3s ease;
         }
 

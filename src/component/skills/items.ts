@@ -1,58 +1,58 @@
 const items = [
     {
-        name: 'angular5',
+        name  : 'angular5',
         image : '/static/image/technology/angular.png',
-        url : ''
+        link  : 'https://angular.io/'
     },
     {
-        name: 'git',
+        name  : 'git',
         image : '/static/image/technology/git.png',
-        url : ''
+        link  : 'https://github.com/'
     },
     {
-        name: 'docker',
+        name  : 'docker',
         image : '/static/image/technology/docker.png',
-        url : ''
+        link  : 'https://www.docker.com/'
     },
     {
-        name: 'firebase',
+        name  : 'firebase',
         image : '/static/image/technology/firebase.png',
-        url : ''
+        link  : 'https://firebase.google.com/'
     },
     {
-        name: 'gcp',
+        name  : 'gcp',
         image : '/static/image/technology/gcp.png',
-        url : ''
+        link  : 'https://cloud.google.com/'
     },
     {
-        name: 'linux',
+        name  : 'linux',
         image : '/static/image/technology/linux.png',
-        url : ''
+        link  : 'https://ja.wikipedia.org/wiki/Linux'
     },
     {
-        name: 'mysql',
+        name  : 'mysql',
         image : '/static/image/technology/mysql.png',
-        url : ''
+        link  : 'https://www.mysql.com/jp/'
     },
     {
-        name: 'nginx',
+        name  : 'nginx',
         image : '/static/image/technology/nginx.png',
-        url : ''
+        link  : 'https://nginx.org/en/'
     },
     {
-        name: 'nodejs',
+        name  : 'nodejs',
         image : '/static/image/technology/nodejs.png',
-        url : ''
+        link  : 'https://nodejs.org/ja/'
     },
     {
-        name: 'polymer',
+        name  : 'polymer',
         image : '/static/image/technology/polymer.png',
-        url : ''
+        link  : 'https://www.polymer-project.org/'
     },
     {
-        name: 'react',
-        image : '/static/image/technology/react.png',
-        url : ''
+        name : 'react',
+        image: '/static/image/technology/react.png',
+        link : 'https://reactjs.org/'
     }
 ];
 

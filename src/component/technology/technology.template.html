@@ -1,12 +1,17 @@
 <!-- technology.template.html -->
 <my-inview>
     <div class="content">
-        <div class="image-wrapper">
+        <a 
+            class="image-wrapper"
+            href="{{ link }}"
+            rel="noopener"
+            target="_blank"
+        >
             <div
                 class="image"
                 style$="background-image: url( {{ url }} );"
             ></div>
-        </div>
+        </a>
     </div>
     <style>
         .content {
@@ -19,13 +24,14 @@
             margin          : 2rem;
             transition      : all .6s ease-out;
             transition-delay: .8s;
-            width : var(--my-technology-width);
-            height: var(--my-technology-height);
+            width           : var(--my-technology-width, 6rem);
+            height          : var(--my-technology-height, 6rem);
         }
 
         .image-wrapper {
             transform: rotate(-45deg);
             border   : 1px solid rgba(72, 242, 227, .5);
+            cursor   : pointer;
             height   : 60%;
             width    : 60%;
         }

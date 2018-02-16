@@ -20,7 +20,7 @@ export class MyApp extends PolymerElement {
         element.scrollIntoView({
             behavior: 'smooth',
             block   : 'start',
-            inline  : 'start',
+            inline  : 'start'
         });
     }
 

@@ -4,6 +4,7 @@
     <div class="item-wrapper">
         <template is="dom-repeat" items="[[ items ]]">
             <my-technology
+                link="{{ item.link }}"
                 name="{{ item.name }}"
                 url="{{ item.image }}"
             ></my-technology>

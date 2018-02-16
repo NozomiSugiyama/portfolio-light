@@ -4,7 +4,11 @@
     <div class="content">
         <div>
             <div class="icon-email"></div>
-            <div>rioc.sugiyama@gmail.com</div>
+            <a 
+                href="mailto:rioc.sugiyama@gmail.com"
+            >
+                rioc.sugiyama@gmail.com
+            </a>
         </div>
         <div>
             <div class="icon-github"></div>
@@ -31,24 +35,24 @@
     <style>
 
         [class^="icon-"], [class*=" icon-"] {
-            background-position:center top;
-            background-repeat  :no-repeat;
-            background-size    :cover;
+            background-position: center top;
+            background-repeat  : no-repeat;
+            background-size    : cover;
             height             : 2rem;
             width              : 2rem;
-            -moz-background-size:cover;
+            -moz-background-size: cover;
         }
 
         .icon-twitter {
-            background-image   :url(/static/image/contact/twitter.png);
+            background-image   :url(/static/image/icon/twitter.png);
         }
 
         .icon-email {
-            background-image   :url(/static/image/contact/email.png);
+            background-image   :url(/static/image/icon/email.png);
         }
 
         .icon-github {
-            background-image   :url(/static/image/contact/github.png);
+            background-image   :url(/static/image/icon/github.png);
         }
 
         .horizontal {
@@ -89,6 +93,15 @@
             .content {
                 flex-direction: column;
             }
+        }
+
+        a {
+            border-bottom: 1px solid transparent;
+            transition   : all .3s ease;
+        }
+
+        a:hover {
+            border-bottom: 1px solid white;
         }
         
     </style>

@@ -16,6 +16,9 @@ export class MyTechnology extends PolymerElement {
 
     static get properties() {
         return {
+            link: {
+                type: String,
+            },
             url: {
                 type: String,
             }
