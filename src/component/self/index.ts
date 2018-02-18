@@ -3,6 +3,9 @@ import { GestureEventListeners } from '@polymer/polymer/lib/mixins/gesture-event
 import * as view from './self.template.html';
 
 export class MySelf extends GestureEventListeners(PolymerElement) {
+
+    hostClass: string = '';
+
     static get template() {
         return view;
     }
@@ -13,6 +16,12 @@ export class MySelf extends GestureEventListeners(PolymerElement) {
 
     ready() {
         super.ready();
+        window.addEventListener(
+            'load',
+            () => {
+                this.hostClass = 'loadend';
+            }
+        );
     }
 
     onActivitiesClick() {
