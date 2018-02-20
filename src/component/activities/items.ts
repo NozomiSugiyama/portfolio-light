@@ -1,7 +1,7 @@
 const items = {
     capacity : [
-        'Microsoft Office Specialist Word 2016',
-        'Microsoft Office Specialist Excel 2016',
+        'Microsoft Office Specialist Word 2013',
+        'Microsoft Office Specialist Excel 2013',
         '応用情報技術者試験 2016 秋季'
     ],
     contest: [
